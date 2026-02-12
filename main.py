@@ -2,7 +2,7 @@ from resume_parser import extract_text_from_pdf
 from matcher import match_resume
 
 def main():
-    resume_text = extract_text_from_pdf("sample_resume.pdf")
+    resume_text = extract_text_from_pdf("demo_resume.pdf")
     result = match_resume(resume_text)
 
     print("\n===== INTERSECT ANALYSIS =====")

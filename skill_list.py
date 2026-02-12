@@ -1,19 +1,22 @@
-SKILLS = [
+CORE_SKILLS = [
     "python",
-    "java",
-    "c++",
-    "machine learning",
-    "deep learning",
     "data structures",
     "algorithms",
     "sql",
-    "mongodb",
-    "docker",
-    "kubernetes",
+    "git",
+    "machine learning"
+]
+
+OPTIONAL_SKILLS = [
+    "java",
+    "c++",
+    "deep learning",
     "aws",
     "flask",
     "django",
+    "docker",
+    "kubernetes",
+    "mongodb",
     "react",
-    "node",
-    "git"
+    "node"
 ]
