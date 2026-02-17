@@ -1,19 +1,27 @@
 from skill_list import SKILLS
 
 def match_resume(resume_text):
+    resume_text = resume_text.lower()
+
     matched = []
     missing = []
 
-    for skill in SKILLS:
-        if skill.lower() in resume_text:
-            matched.append(skill)
-        else:
-            missing.append(skill)
+    for priority, skills in SKILLS.items():
+        for skill in skills:
+            if skill in resume_text:
+                matched.append(skill)
+            else:
+                missing.append({
+                    "skill": skill,
+                    "priority": priority
+                })
 
-    score = int((len(matched) / len(SKILLS)) * 100)
+    total = len(matched) + len(missing)
+    score = int((len(matched) / total) * 100) if total else 0
 
     return {
         "score": score,
-        "matched_skills": matched,
-        "missing_skills": missing
+        "matched": matched,
+        "missing": missing
     }
+
