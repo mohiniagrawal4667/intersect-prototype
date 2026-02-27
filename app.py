@@ -51,7 +51,7 @@ def generate_premium_pdf(score, matched, missing):
 # ---------- PAGE SETUP ----------
 st.set_page_config(page_title="INTERSECT", layout="wide")
 
-st.title("⌚ INTERSECT – Career Readiness Analyzer")
+st.title("🧭 INTERSECT – Career Readiness Analyzer")
 st.caption("Not motivation. Not guessing. Real skill alignment.")
 
 # ---------- INIT SAFE DEFAULTS ----------
