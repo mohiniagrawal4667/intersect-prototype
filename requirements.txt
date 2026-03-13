@@ -3,6 +3,7 @@ gunicorn
 nltk
 spacy
 PyPDF2
+pdfplumber
 pdfminer.six
 reportlab
 streamlit
