@@ -1,9 +1,8 @@
-PyPDF2
-nltk
-streamlit
-reportlab
 flask
+gunicorn
 nltk
 spacy
+PyPDF2
 pdfminer.six
-gunicorn
+reportlab
+streamlit
