@@ -3,7 +3,7 @@ nltk
 streamlit
 reportlab
 flask
-gunicorn
 nltk
 spacy
 pdfminer.six
+gunicorn
